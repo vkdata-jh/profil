@@ -1,0 +1,75 @@
+@keyframes Opravy {
+  0% {
+    transform: scale(1.2);
+    background-color: #226666;
+    transform: rotate(15deg); }
+  25% {
+    transform: scale(1.5);
+    transform: rotateY(90deg);
+    background-color: burlywood;
+    transform: rotate(90deg); }
+  50% {
+    transform: scale3d(2);
+    background-color: burlywood;
+    transform: rotate(180deg); }
+  75% {
+    transform: scale(1.5);
+    background-color: brown;
+    transform: rotate(270deg); }
+  100% {
+    transform: scale(1.2);
+    background-color: #226666;
+    transform: rotate(360deg); } }
+h2 {
+  height: 100px;
+  position: absolute;
+  top: 45%;
+  left: 33%;
+  animation-name: Opravy;
+  animation-duration: 7s;
+  animation-timing-function: linear;
+  align-self: start;
+  animation-iteration-count: infinite;
+  animation-direction: forward;
+  font-size: 32px;
+  border: #226666 dotted 5px;
+  border-radius: 15%; }
+
+.desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #226666; }
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  font-size: 32px;
+  color: white;
+  font-weight: bold; }
+
+.spinner-border {
+  background-color: white;
+  top: 70%;
+  left: 45%;
+  color: #226666; }
+
+#jumbo {
+  background-color: #1cb1b1;
+  color: whitesmoke;
+  border-radius: 5px; }
+
+#shadow {
+  padding: 0;
+  margin: 10px; }
+
+.d-flex {
+  height: 100%;
+  width: 100%; }
+
+/*# sourceMappingURL=style_opravy.css.map */

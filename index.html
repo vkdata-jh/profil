@@ -1,0 +1,465 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vítejte u VK Data</title>
+    <link rel="icon" href="../icons/logoII.png" width="150px" type="image/icon type">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Questrial">
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark px-4 sticky-top">
+        <div class="container ml-auto">
+            <a href="#" class="navbar-brand">
+                <h3 class="mb-0">VK Data</h3>
+            </a>
+
+            <button class="navbar-toggler mb-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-card-list" viewBox="0 0 16 16">
+                        <path
+                            d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z" />
+                        <path
+                            d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                    </svg></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Domů</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">O mně</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projekty</a></li>
+                <li class="nav-item"><a href="#hobby" class="nav-link">Koníčky</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Kontakt</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img height="25px" width="25px" src="../icons/czech.png" alt="czech">cz</a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark justify-content-center">
+                        <!-- <li><a class="dropdown-item" href="#"><img class="language" height="25px" width="25" src="../icons/czech.png"
+                                    alt="czech">CZ</a></li> -->
+                        <li><a class="dropdown-item" href="../en/index_en.html"><img class="language" height="25px"
+                                    width="25px" src="../icons/english.png" alt="english">EN</a></li>
+                        <!-- <li><a class="dropdown-item" href="#"><img height="25px" class="language" width="25px"
+                                    src="../icons/german.png" alt="german">DE</a></li> -->
+                    </ul>
+            </ul>
+        </div>
+    </nav>
+
+    <container id="desktop" class="d-flex flex-column">
+        <section id="about" class="d-flex justify-content-center align-items-center">
+            <div id="overlay"></div>
+
+            <div id="header" class="container text-white text-center">
+                <h3 class="d-none d-md-block display-5 mb-0">Václav K., České Budějovice</h3>
+                <p class="lead d-none d-md-block">Mým celoživotním koníčkem je IT. Aktuálně absolvuji rekvalifikační
+                    kurz, pořádaný VŠB-TU, zaměřený na tvorbu www stránek, správu serverů, objektové programování.
+                <ul>
+                    <li>Programování www aplikací: HTML5, CSS3, JavaScript, PHP+MySQL, frameworky JQuery, React, Nette,
+                        Bootstrap)</li>
+                    <li>Programování desktopových aplikací: Python (základy), OOP v C# a Javě</li>
+                    <li>Pokročilé technologie: reflexe, XML, vlákna, klient-server, JUnit testy, delegáty, regulární
+                        výrazy, verzovací systém Git, repository GitHub, Spring framework, ASP .Net</li>
+                    <li>Databáze (Access, Oracle, programování v PL/SQL, MS SQL Server)</li>
+                    <li>Programování mobilních aplikací (Xamarin, Android Studio)</li>
+                    <li>Programování automatických testů v Selenium a SpecFlow (Gherkin)</li>
+                    <li>Cloudové technologie: MS Azure, Docker</li>
+                </ul>
+                </p>
+            </div>
+        </section>
+
+        <section id="skills">
+
+            <div id="overlay"></div>
+
+            <container id="skill" class="d-flex align-items-left">
+
+                <div id="border" class="first">
+                    <div class="row align-items-left text-left">
+                        <div id="skill_type" class="col-2 col-lg-3 align-items-right d-none d-md-inline">
+                            <h2>Jazyky</h2>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/sharp.png" alt="C#" class="img-fluid  md-inline">
+                            </img>
+                            <div id="name">C#</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/xamarin.png" alt="XAMARIN" class="img-fluid  md-inline">
+                            </img>
+                            <div id="name">Xamarin</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/android.png" alt="Android" class="img-fluid  md-inline">
+                            </img>
+                            <div id="name">Android</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/java.png" alt="Java" class="img-fluid  md-inline">
+                            <div id="name">Java</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/python.png" alt="Python" class="img-fluid  md-inline">
+                            <div id="name">Python</div>
+                            </img>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div id="border" class="second">
+                    <div id="db" class="row align-items-left text-center">
+                        <div id="skill_type" class="col-2 col-lg-3 align-items-center d-none d-md-block">
+                            <h2>Databáze</h2>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/MSSQL.png" alt="MS SQL" class="img-fluid  d-md-inline">
+                            </img>
+                            <div id="name">MS SQL</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/MySQL.png" alt="MySQL" class="img-fluid  d-md-inline">
+                            <div id="name">MySQL</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/oracledatabase.png" alt="Oracle DB" class="img-fluid  d-md-inline">
+                            <div id="name">Oracle DB</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/access.png" alt="Access" class="img-fluid  d-md-inline">
+                            <div id="name">Access</div>
+                            </img>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </container>
+
+            <container id="skill" class="d-flex align-items-left">
+                <div id="border" class="first">
+                    <div class="row align-items-left text-left">
+                        <div id="skill_type" class="col-2 col-lg-2 align-items-center d-none d-md-block">
+                            <h2>www</h2>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/php.png" alt="PHP" class="img-fluid  md-inline">
+                            <div id="name">PHP</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/react.png" alt="React" class="img-fluid md-inline">
+                            <div id="name">React</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/html5.png" alt="HTML5" class="img-fluid  d-md-inline">
+                            </img>
+                            <div id="name">HTML5</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/css.png" alt="CSS" class="img-fluid  d-md-inline">
+                            <div id="name">CSS</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/jquery.png" alt="JQuery" class="img-fluid  d-md-inline">
+                            <div id="name">JQuery</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/bootstrap.png" alt="Bootstrap" class="img-fluid  d-md-inline">
+                            </img>
+                            <div id="name">Bootstrap</div>
+                        </div>
+
+                        <div class="col">
+                            <img src="../icons/JavaScript.png" alt="Java Script" class="img-fluid  d-md-inline">
+                            <div id="name">Java Script</div>
+                            </img>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="border" class="second">
+                    <div id="mng" class="row align-items-left text-center">
+                        <div id="skill_type" class="col-2 col-lg-2 align-items-center d-none d-md-block">
+                            <h2>Správa</h2>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/MSserver.png" alt="MS Server" class="img-fluid  d-md-inline">
+                            </img>
+                            <div id="name">MS Server</div>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/Linux.png" alt="Linux" class="img-fluid  d-md-inline">
+                            <div id="name">Linux</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/centos.png" alt="CentOS" class="img-fluid  d-md-inline">
+                            <div id="name">CentOS</div>
+                            </img>
+                        </div>
+                        <div class="col">
+                            <img src="../icons/redhat.png" alt="RedHat" class="img-fluid  d-md-inline">
+                            <div id="name">RedHat</div>
+                            </img>
+                        </div>
+
+                    </div>
+                </div>
+            </container>
+        </section>
+
+        <container class="d-flex align-items-left">
+            <div id="hidden" class="row">
+                <h2>Používané technologie</h2>
+                <div class="col"><img src="../icons/sharp.png" alt="C#"></div>
+                <div class="col"><img src="../icons/java.png" alt="Java"></div>
+                <div class="col"><img src="../icons/python.png" alt="Python"></div>
+                <div class="col"><img src="../icons/php.png" alt="PHP"></div>
+                <div class="col"><img src="../icons/html5.png" alt="HTML5"></div>
+                <div class="col"><img src="../icons/css.png" alt="CSS"></div>
+                <div class="col"><img src="../icons/jquery.png" alt="JQuery"></div>
+                <div class="col"><img src="../icons/bootstrap.png" alt="Bootstrap"></div>
+                <div class="col"><img src="../icons/jquery.png" alt="Java Script"></div>
+                <div class="col"><img src="../icons/MSSQL.png" alt="MS SQL"></div>
+                <div class="col"><img src="../icons/MySQL.png" alt="MySQL"></div>
+                <div class="col"><img src="../icons/oracledatabase.png" alt="Oracle DB"></div>
+                <div class="col"><img src="../icons/access.png" alt="Access"></div>
+                <div class="col"><img src="../icons/MSserver.png" alt="MS Server"></div>
+                <div class="col"><img src="../icons/Linux.png" alt="Linux"></div>
+                <div class="col"><img src="../icons/centos.png" alt="CentOS"></div>
+            </div>
+
+        </container>
+
+        <section id="projects">
+            <div id="border">
+                <h2>Projekty</h2>
+                <div id="overlay">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title d-none d-md-block">školní projekt</h2>
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img
+                                            src="../images/profil/profil.PNG" alt="školní projekt"></a>
+                                    <p class="card-text">vytvoření webové prezentace v rámci výuky - samostatný školní
+                                        projekt s časovým limitem 8 hodin.</p>
+                                    <div id="writtenin" class="d-flex justify-content-center"><i
+                                            class="fa-sharp fa-solid fa-code"></i>&nbsp;<img src="../icons/css.png"
+                                            height="50px" alt="CSS"><img src="../icons/html5.png" alt="HTML5"><img
+                                            src="../icons/jquery.png" alt="JQuery"><i
+                                            class="fa-sharp fa-solid fa-code"></i>
+                                    </div>
+                                    <a name="#projektCSS"
+                                        href="https://github.com/vkdata-jh/profil_www/tree/main/projekty/cviceni"
+                                        target="_blank" rel="noopener noreferrer" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-code-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                                        </svg>&nbsp;source code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h2 class="card-title d-none d-md-block">portfolio</h2>
+                                    <a href="http://www.vkdata.cz" target="_blank" rel="noopener noreferrer"><img
+                                            src="../images/profil/Rim.png" alt="profesní profil"
+                                            class="d-size-small"></a>
+                                    <p class="card-text">vytvoření webové prezentace - profesního profilu</p>
+                                    <div id="writtenin" class="d-flex justify-content-center"><i
+                                            class="fa-sharp fa-solid fa-code"></i>&nbsp;<img src="../icons/css.png"
+                                            height="50px" alt="CSS"><img src="../icons/html5.png" alt="HTML5"><img
+                                            src="../icons/JavaScript.png" alt="JavaScript"><img
+                                            src="../icons/jquery.png" alt="JQuery"><i
+                                            class="fa-sharp fa-solid fa-code"></i></div>
+                                    <a href="https://github.com/vkdata-jh/profil_www/tree/main/www" target="_blank"
+                                        rel="noopener noreferrer" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-code-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                                        </svg>&nbsp;source code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="card">
+                                <div class="card-body d-block justify-content-center">
+                                    <h2 class="card-title d-none d-md-block">penzion</h2>
+                                    <a href="#" target="_blank" rel="noopener noreferrer"><img
+                                            src="../images/profil/penzion.png" alt="penzion"></a>
+                                    <p class="card-text">prezentace rodinného penzionu, návrh designu, rezervační systém
+                                    </p>
+                                    <div id="writtenin" class="d-flex justify-content-center"><i
+                                            class="fa-sharp fa-solid fa-code"></i>&nbsp;<img src="../icons/css.png"
+                                            height="50px" alt="CSS"><img src="../icons/html5.png" alt="HTML5"><img
+                                            src="../icons/php.png" alt="PHP"><i
+                                            class="fa-sharp fa-solid fa-code"></i></div>
+                                    <a name="#penzion"
+                                        href="https://github.com/vkdata-jh/profil_www/tree/main/projekty/penzion"
+                                        target="_blank" rel="noopener noreferrer" class="btn btn-primary"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-file-earmark-code-fill"
+                                            viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708z" />
+                                        </svg>&nbsp;source code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section name="hobby" id="hobby">
+            <h2>Koníčky</h2>
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                        type="button" role="tab" aria-controls="nav-home" aria-selected="true">Cestování</button>
+                    <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                        type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Turistika</button>
+                    <button class="nav-link" id="nav-history-tab" data-bs-toggle="tab" data-bs-target="#nav-history"
+                        type="button" role="tab" aria-controls="nav-history" aria-selected="false">Literatura</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="col-4 d-none d-md-block">
+                            <div id="CarouselHobby" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active"><img src="../images/profil/Spreva.png"
+                                            alt="Spréva" class="d-block w-100"></div>
+                                    <div class="carousel-item"><img src="../images/profil/Dolomiti.png"
+                                            alt="Dolomity" class="d-block w-100"></div>
+                                    <div class="carousel-item"><img src="../images/profil/DolomitiII.png"
+                                            alt="Dolomity 2" class="d-block w-100"></div>
+                                    <div class="carousel-item"><img src="../images/profil/Florencie_ulicka.png"
+                                            alt="Florencie" class="d-block w-100"></div>
+                                </div>
+                                <button class="carousel-control-prev bg-dark" type="button"
+                                    data-bs-target="#CarouselHobby" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next bg-dark" type="button"
+                                    data-bs-target="#CarouselHobby" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-8 d-none d-md-block">
+                            <p>
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias autem est cumque
+                                recusandae
+                                impedit rerum, optio deleniti laborum? Nostrum officiis quasi eius hic non minima
+                                fuga,
+                                et
+                                praesentium unde modi dignissimos sint quibusdam ea repellendus, eligendi aliquam
+                                cupiditate
+                                incidunt doloribus? Repellendus quasi vel cumque! Eligendi a molestiae aspernatur
+                                ratione
+                                sed?
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                    tabindex="0">
+                    <p>Lysá hora,Dolomity</p>
+                </div>
+                <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-histoty-tab"
+                    tabindex="0">
+                    <p>WW2, středověk</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section id="contact">
+            <div class="row d-flex justify-content-center">
+                <div id="form" class="col d-10 md-8">
+
+                    <h2>Napište mi </h2>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="email">@</span>
+                            <input type="email" class="form-control" placeholder="Zadejte Váš email" aria-label="email"
+                                aria-describedby="email">
+                        </div>
+                        <div class="input-group mb-3">
+
+                            <textarea class="form-control" aria-label="zprava" rows="3"></textarea>
+                            <button type="submit" class="btn btn-primary">Odešli!</button>
+                        </div>
+                    </form>
+
+                </div>
+                <div id="social" class="col d-2-block md-4-inline align-items-right">
+                    <h2>nebo prostřednictvím sociálních sítí</h2>
+                    <div class="d-flex align-item-right">
+                        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><img
+                                src="../icons/twitter.png" height="50px" alt="Twitter"></a>
+                        <a href="https://www.linkedin.com/in/vaclav-klimes-jh/" target="_blank"
+                            rel="noopener noreferrer"><img src="../icons/linkedin.png" height="50px"
+                                alt="linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </container>
+    <footer id="footer">
+        <container class="d-flex d-inline">
+
+            <div class="row">
+                <div class="col-6 md-4">
+                    <p>&copy;2022 VK Data</p>
+                </div>
+            </div>
+        </container>
+    </footer>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
