@@ -37,7 +37,7 @@ body {
 
 #about {
   position: relative;
-  background: url("../images/profil/Rim.png") center center/cover no-repeat;
+  background: url("../images/Rim.png") center center/cover no-repeat;
   min-height: 450px;
   width: 100%; }
   #about #header {
@@ -112,9 +112,31 @@ body {
   padding-right: 15px; }
 #projects .card {
   height: 100%;
+  position: relative;
   z-index: 2;
   padding: 5px;
-  margin: 5px; }
+  margin: 5px;
+  z-index: 0; }
+  #projects .card .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1; }
+    #projects .card .overlay p {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      transform: rotate(45deg);
+      z-index: 2;
+      font-size: 2rem;
+      color: white;
+      font-weight: 400;
+      z-index: 3; }
   #projects .card .card-body {
     color: #226666;
     background-color: #1cb1b1; }
@@ -151,16 +173,21 @@ body {
   #hobby .nav .nav-link {
     background-color: #226666;
     color: white; }
-  #hobby .nav .nav-link:focus {
+  #hobby .nav .nav-link:focus,
+  #hobby .nav .nav-link:visited {
     background-color: white;
     color: #226666; }
-  #hobby .nav .nav-link:hover {
+  #hobby .nav .nav-link:hover,
+  #hobby .nav .nav-link:active {
     transform: scale(1.1);
     background-color: white;
     color: #226666; }
-  #hobby #CarouselHobby img {
+  #hobby #carousel img {
     height: 300px;
     width: auto; }
+  #hobby #carousel iframe {
+    overflow-wrap: normal;
+    height: 400px; }
 
 #footer {
   border: 2px solid #226666;
@@ -237,6 +264,8 @@ body {
 
   #projects .card {
     margin-top: 10px; }
+    #projects .card .overlay p {
+      font-size: 1.2rem; }
 
   #hobby {
     display: none; } }
@@ -260,10 +289,12 @@ body {
     margin: auto; }
 
   #projects .card {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+    #projects .card .overlay p {
+      font-size: 1.2rem; } }
 @media (max-width: 1200px) {
   #skills #skill_type {
-    font-size: 0.5rem;
+    font-size: 0.8em;
     word-wrap: break-word; } }
  /*   "secondary":#142727
     "dark":#1e4646
