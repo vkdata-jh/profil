@@ -1,18 +1,44 @@
 body {
-  font-family: "Raleway", sans-serif; }
-  body #desktop {
-    justify-self: center;
-    margin-left: 10%;
-    margin-right: 10%; }
-  body h3, body .h3 {
-    font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16; }
-  body h2, body .h2 {
-    font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20; }
-  body h1, body .h1 {
-    font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 24; }
+  font-family: "Raleway", sans-serif;
+  background: url("../icons/fatos-bytyqi-Agx5_TLsIf4-unsplash.jpg") center center/cover repeat;
+  z-index: 0; }
+  body .overlay {
+    position: absolute;
+    height: 290%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /*background-color: rgba(246, 250, 244, 0.6);*/
+    /*background: rgba(26, 25, 25, 0.3);*/
+    z-index: 1; }
+
+#desktop {
+  justify-self: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 0 10px;
+  position: relative;
+  z-index: 4;
+  background: rgba(34, 102, 102, 0.6);
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: 2px solid #226666;
+  border-left: 2px solid #226666;
+  border-right: 2px solid #226666;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
+
+h3, .h3 {
+  font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16; }
+
+h2, .h2 {
+  font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20; }
+
+h1, .h1 {
+  font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24; }
 
 .navbar {
   font-weight: 100;
@@ -21,7 +47,7 @@ body {
   top: 0;
   right: 0;
   left: 0;
-  z-index: 3; }
+  z-index: 6; }
   .navbar .navbar-brand h3, .navbar .navbar-brand .h3 {
     font-weight: 700; }
   .navbar .nav-item {
@@ -39,40 +65,52 @@ body {
   position: relative;
   background: url("../images/Rim.png") center center/cover no-repeat;
   min-height: 450px;
-  width: 100%; }
+  width: 100%;
+  font-weight: 400;
+  /*border: 5px solid white;*/
+  z-index: 1;
+  margin-bottom: 20px;
+  border: 2px solid #226666;
+  border-top: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
   #about #header {
-    z-index: 2; }
+    z-index: 4; }
     #about #header ul {
       font-size: 1.2rem;
       text-align: left;
       list-style-type: "\2713"; }
   #about #overlay {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(34, 102, 102, 0.2);
     position: absolute;
     margin-top: 0;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 1; }
+    z-index: 2; }
 
 #skills {
   color: #1e4646;
   font-family: "Raleway", sans-serif;
-  padding: 10px;
+  /*padding: 10px;*/
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  z-index: 0; }
+  /*background-color: white;*/
+  margin-bottom: 20px;
+  z-index: 4; }
   #skills #skill {
     padding: 5px;
     display: block; }
   #skills #border {
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 10px;
+    background-color: white;
     z-index: 2;
-    border: #226666 solid 5px; }
+    border: #226666 solid 2px; }
   #skills .first {
     width: 55%; }
   #skills .second {
@@ -96,7 +134,9 @@ body {
     left: 0; }
 
 #hidden {
-  display: none; }
+  display: none;
+  background-color: white;
+  z-index: 4; }
 
 #projects #border {
   border: 2px solid #226666;
@@ -109,7 +149,8 @@ body {
   margin-left: 10px;
   padding-bottom: 30px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  z-index: 4; }
 #projects .card {
   height: 100%;
   position: relative;
@@ -126,7 +167,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
-    z-index: 1; }
+    z-index: 4; }
     #projects .card .overlay p {
       position: absolute;
       top: 30%;
@@ -139,7 +180,8 @@ body {
       z-index: 3; }
   #projects .card .card-body {
     color: #226666;
-    background-color: #1cb1b1; }
+    background-color: #1cb1b1;
+    z-index: 4; }
     #projects .card .card-body img {
       height: 100px;
       width: auto;
@@ -160,7 +202,7 @@ body {
   display: none; }
 
 #hobby {
-  border: 5px solid #226666;
+  border: 2px solid #226666;
   color: #1cb1b1;
   border-radius: 10px;
   z-index: 1;
@@ -169,7 +211,9 @@ body {
   margin-left: 10px;
   padding-bottom: 30px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  background-color: white;
+  z-index: 4; }
   #hobby .nav .nav-link {
     background-color: #226666;
     color: white; }
@@ -199,7 +243,8 @@ body {
   margin-bottom: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  z-index: 4; }
   #footer p {
     left: 0;
     bottom: 0;
@@ -217,16 +262,19 @@ body {
   padding-bottom: 30px;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative; }
+  position: relative;
+  z-index: 4; }
   #contact #form {
-    align-items: left;
-    z-index: 1; }
+    align-items: left; }
   #contact #social {
     align-content: right; }
   #contact .btn {
     background-color: #1cb1b1; }
 
 @media (max-width: 768px) {
+  body {
+    background-color: white; }
+
   .navbar {
     background: #226666; }
     .navbar .nav-link {
