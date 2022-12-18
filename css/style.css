@@ -1,7 +1,7 @@
 :root {
-  --background: rgb(7, 20, 57);
+  --background: rgba(14, 17, 240, 1);
   --text: rgb(250, 251, 255);
-  --backroundLight: rgb(47, 64, 115);
+  --backgroundLight: rgb(47, 64, 115);
   --borderColor: black;
   --textDark: black;
   --textWhite: white; }
@@ -11,12 +11,11 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background: url("../images/alex.png") center center/cover repeat;
-  opacity: 1;
-  z-index: 0; }
+  background-color: white; }
 
 .shadowed {
-  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.5); }
+  box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(grey, #ded9d9); }
 
 .overlay {
   position: absolute;
@@ -24,8 +23,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #4d4b4b;
-  outline-color: #4d4b4b;
+  /*background-color: rgb(77, 75, 75);
+  outline-color: rgb(77, 75, 75);*/
   outline-width: 3px;
   outline-style: solid;
   opacity: 0.6;
@@ -46,11 +45,11 @@ body {
   z-index: 1; }
 
 .section_text {
-  font-size: 2.5rem;
-  letter-spacing: 5px;
+  font-size: 2rem;
+  letter-spacing: 5pt;
   font-weight: 700;
   color: var(--textDark);
-  text-shadow: 4px 4px var(--textWhite); }
+  z-index: 3; }
 
 .avatar {
   margin-right: 10px;
@@ -92,7 +91,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   padding: 0 10px;
-  z-index: 2; }
+  z-index: 1; }
 
 h3, .h3 {
   font-family: "Questrial", Verdana, Geneva, Tahoma, sans-serif;
@@ -150,14 +149,11 @@ h1, .h1 {
   .about .head {
     position: relative;
     z-index: 3; }
-    .about .head p {
-      display: flow-root; }
-    .about .head ul {
-      font-size: 1.2rem;
+    .about .head .knowledges {
       text-align: left;
       list-style-type: "\2713"; }
   .about .overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.2);
     position: absolute;
     margin-top: 0;
     top: 0;
@@ -198,7 +194,8 @@ h1, .h1 {
     align-self: justify;
     z-index: 3; }
   .skills .row {
-    padding: 5px; }
+    padding: 5px;
+    flex-wrap: space-around; }
   .skills h2, .skills .h2 {
     font-size: 24px;
     z-index: 3; }
@@ -260,11 +257,10 @@ h1, .h1 {
         font-weight: bold;
         color: yellow;
         opacity: 1;
-        font-weight: 400;
         z-index: 6; }
     .projects .card .card-body {
       color: var(--textWhite);
-      background-color: var(--backroundLight);
+      background-color: var(--backgroundLight);
       opacity: 0.8;
       z-index: 5; }
       .projects .card .card-body img {
@@ -275,7 +271,7 @@ h1, .h1 {
         height: 4rem;
         overflow: hidden; }
       .projects .card .card-body .writtenin img {
-        height: 30px;
+        max-height: 30px;
         margin-right: 3px;
         margin-left: 3px; }
       .projects .card .card-body .btn {
@@ -295,7 +291,6 @@ h1, .h1 {
   padding-right: 15px;
   color: var(--textWhite);
   border: 1px solid var(--textWhite);
-  font-size: 1.3rem;
   z-index: 0; }
   .hobby .col-8,
   .hobby p {
@@ -320,7 +315,7 @@ h1, .h1 {
   .hobby .carousel {
     z-index: 3;
     position: relative;
-    background-color: var(--backroundLight); }
+    background-color: var(--backgroundLight); }
     .hobby .carousel .construction {
       position: absolute;
       height: 100%;
@@ -343,7 +338,8 @@ h1, .h1 {
         font-weight: 400;
         z-index: 6; }
     .hobby .carousel img {
-      height: 300px;
+      min-height: 100px;
+      max-height: 300px;
       width: auto; }
     .hobby .carousel iframe {
       overflow-wrap: normal;
@@ -367,7 +363,7 @@ h1, .h1 {
     white-space: nowrap;
     z-index: 3; }
 
-#contact {
+.contact {
   border: 2px solid var(--textWhite);
   color: var(--textWhite);
   border-radius: 10px;
@@ -379,14 +375,14 @@ h1, .h1 {
   padding-right: 15px;
   padding-top: 30px;
   z-index: 2; }
-  #contact h2, #contact .h2 {
+  .contact p {
     color: var(--textWhite);
     z-index: 3; }
-  #contact #form {
+  .contact .form {
     align-items: left;
     position: relative;
     z-index: 1; }
-    #contact #form .construction {
+    .contact .form .construction {
       position: absolute;
       height: 100%;
       width: 100%;
@@ -396,26 +392,32 @@ h1, .h1 {
       align-items: center;
       background-color: rgba(0, 0, 0, 0.8);
       z-index: 5; }
-      #contact #form .construction p {
+      .contact .form .construction p {
         position: absolute;
-        top: 40%;
-        left: 20%;
-        font-size: 2rem;
+        font-size: 0.8rem;
         font-weight: bold;
         color: yellow;
+        text-align: center;
+        padding: auto;
         opacity: 1;
-        font-weight: 400;
         z-index: 6; }
-  #contact #social {
+  .contact #social {
     align-content: right;
     z-index: 1; }
-  #contact .btn {
+  .contact .btn {
     background-color: var(--background);
     z-index: 3; }
 
+@media (max-width: 520px) {
+  .skills .row {
+    align-content: center;
+    justify-content: center;
+    margin: 2px;
+    flex-flow: column;
+    padding: 2px; } }
 @media (max-width: 768px) {
   body {
-    background-color: var(--backroundLight); }
+    background-color: var(--backgroundLight); }
 
   .navbar {
     background: var(--background); }
@@ -445,13 +447,11 @@ h1, .h1 {
     width: auto; }
 
   .projects .card {
-    margin-top: 10px; }
-    .projects .card .overlay p {
-      font-size: 0.6rem; }
-
-  .hobby {
-    display: none; } }
+    margin-top: 10px; } }
 @media (max-width: 992px) {
+  body {
+    background: var(--backgroundLight); }
+
   .avatar {
     margin-right: 10px; }
 
@@ -482,7 +482,7 @@ h1, .h1 {
   .skills .skill_type {
     display: none;
     font-size: 0.8em;
-    word-wrap: break-word; } }
+    white-space: wrap; } }
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
